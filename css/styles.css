@@ -1,0 +1,31 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+header a {
+    /* float: right; */
+    padding: 20px;
+    
+}
+
+header img {
+    display: block;
+    margin-top: -20px;
+    /* float: left; */
+}
+
+button {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    clear: both;
+}
