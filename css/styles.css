@@ -1,29 +1,68 @@
-body {
-    font-family: 'Open Sans', sans-serif;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* Floating the img to the left and sizing it to a width of 320px and a height or 125px */
 img {
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 320px;
+    height: 125px;
+}
+
+/* Setting the margin top and left values to negative to adjust the img to the top left corner of the website */
+.imgContainer {
+    margin-top: -20px;
+    margin-left: -60px;
 }
 
 header a {
     /* float: right; */
-    padding: 20px;
-    
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
-header img {
-    display: block;
-    margin-top: -20px;
-    /* float: left; */
+a {
+    text-decoration: none;
+    color: black;
 }
 
-button {
-    display: inline-block;
-    border: none;
+/* Styling the Resume button to have a */
+.button1 {
+    width: 9em;
+    height: 5ex;
+    border: 1.9px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    background-color: #000000;
     cursor: pointer;
+}
+
+.button1:hover {
+    transition: all 260ms ease;
+    color: black;
+    background-color: white;
+    border: 1.9px solid black;
+}
+
+/* Dark mode functionality */
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+.heroSection {
+    padding: 20px 40px 20px 40px;
+}
+
+a:hover {
+    
 }
 
 h1 {
