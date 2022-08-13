@@ -11,8 +11,8 @@ body {
 /* Floating the img to the left and sizing it to a width of 320px and a height or 125px */
 img {
     float: left;
-    width: 320px;
-    height: 125px;
+    width: 250px;
+    height: 100px;
 }
 
 /* Setting the margin top and left values to negative to adjust the img to the top left corner of the website */
