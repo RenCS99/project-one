@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    margin: 0;
+}
+
 body {
     font-family: 'Open Sans', 'Roboto', sans-serif;
     background-color: white;
@@ -30,6 +34,28 @@ header a {
 a {
     text-decoration: none;
     color: black;
+    margin-left: 10px;
+}
+  
+a.left {
+    position: relative;
+}
+
+a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 23px;
+    background-color: #000000;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 60%;
 }
 
 /* Styling the Resume button to have a */
@@ -59,10 +85,6 @@ a {
 
 .heroSection {
     padding: 20px 40px 20px 40px;
-}
-
-a:hover {
-    
 }
 
 h1 {
