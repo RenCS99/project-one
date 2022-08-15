@@ -7,9 +7,17 @@ html {
 }
 
 body {
+    position: relative;
     font-family: 'Open Sans', 'Roboto', sans-serif;
     background-color: white;
+    font-size: 20px;
     color: black;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 25rem;
 }
 
 /* Floating the img to the left and sizing it to a width of 320px and a height or 125px */
@@ -27,8 +35,13 @@ img {
 
 header a {
     /* float: right; */
-    padding-top: 20px;
+    margin-top: 40px;
     padding-right: 20px;
+}
+
+.nav-links {
+    float: right;
+    margin-top: 10px;
 }
 
 a {
@@ -62,7 +75,7 @@ a.left:hover:before {
 .button1 {
     width: 9em;
     height: 5ex;
-    border: 1.9px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 25px;
     color: white;
     font-weight: bold;
@@ -84,11 +97,31 @@ a.left:hover:before {
 }
 
 .heroSection {
+    clear: both;
+    /* Color Background Test */
+    background-color: wheat;
     padding: 20px 40px 20px 40px;
 }
 
-h1 {
-    clear: both;
+.main-content {
+    display: inline-block;
+    height: 1000px;
+    width: 100%;
+    background-color: #07a7a7;
+}
+
+.main-content::after {
+    content: '';
+    display: block;
+    height: 2.5rem;
+}
+
+.email-signup {
+
+}
+
+.footer-menu{
+    
 }
 
 footer {
