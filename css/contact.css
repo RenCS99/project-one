@@ -1,5 +1,6 @@
 body > h1 {
   clear: both;
+  padding-left: 150px;
 }
 
 .container {
@@ -19,12 +20,20 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+input[type=email] {
+  width: 266%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
 label {
