@@ -132,7 +132,6 @@ a.left:hover:before {
     display: inline-block;
     height: 1000px;
     width: 100%;
-    background-color: #07a7a7;
 }
 
 .recent-projects {
@@ -297,7 +296,8 @@ div.box{
     transform-origin: bottom left;
     border-top: 1px solid black;
     position: absolute;
-    bottom: -165px;
-    left: 130px;
+    bottom: -160px;
+    margin-left: 132px;
+    /* left: 130px; */
     box-sizing: border-box;
  }
