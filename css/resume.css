@@ -7,6 +7,7 @@
     margin: 0 10% 0 10%;
 }
 
+
 .resume-download button {
   font-weight: 600;
   border: solid 2px black;
@@ -44,4 +45,14 @@
       height: 100%;
       top: .5rem;
       left: .5rem;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  height: 8rem;
+}
+
+div.line{
+  bottom: -17.5rem;
 }
