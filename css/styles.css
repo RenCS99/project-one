@@ -28,7 +28,7 @@ body > h1 {
     text-underline-offset: 3px;
 }
 
-h2 {
+body > div > h2 {
     margin-left: 7%;
     text-decoration: underline solid black 2px;
     text-underline-offset: 3px;
@@ -161,6 +161,11 @@ a.left:hover:before {
     margin-top: 265px;
 }
 
+#prog-lang {
+    margin: 0 7% 0 7%;
+}
+
+
 footer {
     text-align: center;
     display: block;
@@ -290,6 +295,7 @@ div.box{
     box-sizing: border-box;
     overflow: hidden;
  }
+ 
  div.line{
     width: 50px;
     transform: rotate(-55deg);
