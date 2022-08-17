@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    margin: 0;
     position: relative;
     font-family: 'Open Sans', 'Roboto', sans-serif;
     background-color: white;
@@ -20,28 +21,47 @@ body::after {
     height: 25rem;
 }
 
+body > h1 {
+    clear: both;
+    margin-left: 10%;
+    text-decoration: underline solid black 2px;
+    text-underline-offset: 3px;
+}
+
+h2 {
+    margin-left: 7%;
+    text-decoration: underline solid black 2px;
+    text-underline-offset: 3px;
+}
+
 /* Floating the img to the left and sizing it to a width of 320px and a height or 125px */
 img {
     float: left;
-    width: 250px;
-    height: 100px;
+    width: 400px;
+    height: 150px;
+    margin-top: 35px;
+    margin-left: -20px;
 }
 
-/* Setting the margin top and left values to negative to adjust the img to the top left corner of the website */
+/* Setting the margin top and left values to negative to adjust the img to the top left corner of the website
 .imgContainer {
-    margin-top: -20px;
-    margin-left: -60px;
+    width: 400px;
+    height: 150px;
+    margin-top: -10px;
+    margin-left: -20px;
+} */
+
+header {
+    margin-top: -50px;
 }
 
 header a {
-    /* float: right; */
-    margin-top: 40px;
-    padding-right: 20px;
+    padding-right: 25px;
 }
 
 .nav-links {
     float: right;
-    margin-top: 10px;
+    margin-top: 75px;
 }
 
 a {
@@ -99,8 +119,21 @@ a.left:hover:before {
 .heroSection {
     clear: both;
     /* Color Background Test */
-    background-color: wheat;
+    background-image: url("../img/hero-img-index.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.39) 0%,rgba(0,0,0,0.4) 7%,rgba(0,0,0,0.57) 100%), url("../img/hero-img-index.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    height: 450px;
+    width: 100%;
+    color: #ffffff;
     padding: 20px 40px 20px 40px;
+}
+
+.heroSection h1 {
+    font-size: 45px;
+    padding: 80px 0 0 100px;
 }
 
 .main-content {
@@ -110,24 +143,169 @@ a.left:hover:before {
     background-color: #07a7a7;
 }
 
-.main-content::after {
-    content: '';
-    display: block;
-    height: 2.5rem;
+.recent-projects {
+    margin: 0 10% 0 10%;
+    width: 80%;
+    height: auto;
 }
 
-.email-signup {
-
+.col {
+    /* background-color: gray; */
+    display: inline-block;
+    width: 29%;
+    margin: 20px;
+    height: 300px;
 }
 
-.footer-menu{
-    
+.col img {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 250px;
+}
+
+.col p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 265px;
 }
 
 footer {
     text-align: center;
+    display: block;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem; 
+    height: 25rem; 
 }
+
+.footer-menu {
+    float: left;
+    height: 20rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 50%;
+}
+
+.email-signup {
+    float: right;
+    text-align: left;
+    height: 20rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 40%;
+    /* background-color: pink; */
+}
+
+footer h5 {
+    text-decoration: underline solid black 2px;
+    text-underline-offset: 3px;
+}
+
+.footer-menu h5 {
+    float: right;
+    padding-right: 10%;
+}
+
+footer p {
+    clear: both;
+}
+
+.social-container {
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+
+#nav-bars {
+    clear: right;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    float: right;
+    margin-top: -1.5%;
+}
+
+#nav-bars li {
+    padding-right: 70px;
+    padding-bottom: 10px;
+}
+
+.social-icons {
+    list-style-type: none;
+    margin-top: 9%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.social-icons li {
+    float: left;
+    margin-right: 40px;
+}
+
+.social-icons li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+
+#twitter-hover:hover {
+    color: #1DA1F2;
+}
+
+#facebook-hover:hover {
+    color: #1877F2;
+}
+
+#instagram-hover:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#linkedin-hover:hover {
+    color: #0A66C2;
+}
+
+#github-hover:hover {
+    color: #4cd3aa;
+}
+
+.email-signup input {
+    padding: 10px;
+}
+
+#btn-email {
+    width: 7em;
+    height: 39px;
+    margin-left: -5px;
+    border: 2px solid rgb(0, 0, 0);
+    
+    color: white;
+    font-weight: bold;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+div.box{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid red; */
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+ }
+ div.line{
+    width: 50px;
+    transform: rotate(-55deg);
+    transform-origin: bottom left;
+    border-top: 1px solid black;
+    position: absolute;
+    bottom: -165px;
+    left: 130px;
+    box-sizing: border-box;
+ }
