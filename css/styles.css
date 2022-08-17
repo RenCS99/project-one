@@ -18,7 +18,7 @@ body {
 body::after {
     content: '';
     display: block;
-    height: 14rem;
+    height: 22rem;
 }
 
 body > h1 {
@@ -108,6 +108,7 @@ a.left:hover:before {
     color: white;
 }
 
+/*  */
 .heroSection {
     clear: both;
     /* Color Background Test */
@@ -130,7 +131,7 @@ a.left:hover:before {
 
 .main-content {
     display: inline-block;
-    height: 1000px;
+    height: auto;
     width: 100%;
 }
 
@@ -140,14 +141,15 @@ a.left:hover:before {
     height: auto;
 }
 
+/* Styling the project columns */
 .col {
-    /* background-color: gray; */
     display: inline-block;
     width: 29%;
     margin: 20px;
     height: 300px;
 }
 
+/* Adjusting the sizing of the image inside the column boxes */
 .col img {
     margin-top: 0;
     margin-left: 0;
@@ -155,17 +157,39 @@ a.left:hover:before {
     height: 250px;
 }
 
+/* Positioning the text of the projects */
 .col p {
     font-weight: bold;
     text-align: center;
     margin-top: 265px;
 }
 
+/* Styling the prog-lang section with display flex */
 #prog-lang {
+    display: flex;
+    flex-direction: column;
     margin: 0 7% 0 7%;
 }
 
+/* Tools div styling to center it in the page */
+#tools {
+   width: 84%;
+   display: flex;
+   flex-direction: row;
+   margin-left: 10rem;
+   margin-bottom: 4rem;
+}
 
+/* Lang div styling to center it in the page */
+#lang {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: 10rem;
+    margin-bottom: 4rem;
+}
+
+/* Footer Styling to place it in the bottom */
 footer {
     text-align: center;
     display: block;
@@ -295,7 +319,7 @@ div.box{
     box-sizing: border-box;
     overflow: hidden;
  }
- 
+
  div.line{
     width: 50px;
     transform: rotate(-55deg);
