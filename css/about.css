@@ -14,10 +14,15 @@
 }
 
 #about-section span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
     height: 350px;
     width: 70%;
     margin-top: 50px;
+    font-size: 50px;
+    /* font-weight: bold; */
 }
 
 #school-section {
@@ -36,8 +41,12 @@
 } 
 
 #school-section span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: right;
     height: 350px;
     width: 70%;
     margin-top: 50px;
+    font-size: 50px;
 }
