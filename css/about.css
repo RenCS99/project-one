@@ -1,0 +1,43 @@
+#about-section {
+    width: 80%;
+    height: 500px;
+    margin: 0 10% 0 10%;
+}
+
+#about-section img {
+    float: right;
+    width: 380px;
+    height: 350px;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+#about-section span {
+    float: left;
+    height: 350px;
+    width: 70%;
+    margin-top: 50px;
+}
+
+#school-section {
+    width: 80%;
+    height: 500px;
+    margin: 0 10% 0 10%;
+}
+
+#school-section img{
+    float: left;
+    width: 380px;
+    height: 370px;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 2px solid gray;
+} 
+
+#school-section span {
+    float: right;
+    height: 350px;
+    width: 70%;
+    margin-top: 50px;
+}
